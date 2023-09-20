@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //indexes start from 0
+        let arr=["milk","bread","jam"]; 
+        //console.log(arr)
+        //console.log(arr[1]); //accessing value of array
+        arr[1]="rice";   //replacing array elements
+        //console.log(arr)
+        //console.log(arr.length)
+         
+        //==========Array methods==================
+        let fruits=['apple','banana','mango','grapes','mango']; 
+        let vegetables=["onion","bhindi"]
+        let combine=fruits.concat(vegetables)
+        console.log(combine);
+        fruits.push("orange"); // it add value at the end of array
+        console.log(fruits)
+        fruits.pop(); //it removes value from the end of array
+        console.log(fruits);
+        fruits.unshift("guava"); // adds value at start of the array
+        console.log(fruits);
+        fruits.shift();
+        console.log(fruits); //removes value from start of the array
+        fruits.splice(1,3)  //(index,no.of.elements deleted)
+        console.log(fruits) 
+        fruits.splice(1,0,"banana","mango","grapes")  //(index,no.of.elements deleted,value name)
+        console.log(fruits)
+        console.log(fruits.indexOf("mango",3)) //gives index of element which meets first
+        console.log(fruits.lastIndexOf("mango")) //gives index of element which meets last
+        console.log(fruits.sort());
+        console.log(fruits.reverse()); 
+
+        //=============class task==================================
+        const myList = [];
+       myList.push("Milk", "Bread", "Apples");
+       myList.splice(1, 1, "Bananas", "Eggs");
+       const removeLast = myList.pop();
+       myList.sort();
+       console.log(myList.indexOf("Milk"));
+       myList.splice(1, 0, "Carrots", "Lettuce");
+       const myList2 = ["Juice", "Pop"];
+       const finalList = myList.concat(myList2, myList2);
+       console.log(finalList.lastIndexOf("Pop"));
+       console.log(finalList);
+
+
+       //====================Multidimensional Arrays=============
+
+       let arrOfArrays2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+       console.log(arrOfArrays2[2][2])
+
+        //====================Multidimensional Arrays Task=============
+        let arr=[1,2,3];
+        let newArray=[arr,arr,arr];
+        console.log(newArray[1][1]) //2
+        console.log(newArray[0][1]) //2
+        console.log(newArray[2][1]) //2
+
+
+
+    
+
+
+
+
+
+
+    </script>
+</body>
+</html>
