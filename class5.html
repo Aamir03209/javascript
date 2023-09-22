@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //let age=prompt("Enter Your age?");
+        //age=Number(age);
+        //(age>20)?console.log("Age is greater than 20"):console.log("not greater than 20");
+
+        let id = false;
+        let message = (id) ? "Allowed" : "Not allowed";
+        //console.log(message)
+
+        //====================== Switch Statement =====================
+        //         let activity=prompt("Enter activity value?")
+
+
+        //         switch(activity) {
+        //         case "Get up":
+        //         console.log("It is 6:30AM");
+        //         break;
+        //         case "Breakfast":
+        //         console.log("It is 7:00AM");
+        //         break;
+        //         case "Drive to work":
+        //         console.log("It is 8:00AM");
+        //         break;
+        //         case "Lunch":
+        //         console.log("It is 12:00PM");
+        //         break; 
+        //         case "Drive home":
+        //         console.log("It is 5:00PM");
+        //         break; 
+        //         case "Dinner":
+        //         console.log("It is 6:30PM");
+        //         break;
+        //         default:
+        //         console.log("You entered a wrong value");
+        //         break;
+        // }
+
+        // let grade=prompt("Enter Grade?");
+        // switch(grade){
+        // case "F":
+        // case "E":
+        // case "D":
+        // case "f":
+        // case "e":
+        // case "d":
+        // console.log("You've failed!");
+        // break;
+        // case "C":
+        // case "B":
+        // console.log("You've passed!");
+        // break;
+        // case "A":
+        // console.log("Nice!");
+        // break;
+        // default:
+        // console.log("I don't know this grade.");
+        // }
+
+        //=================================== switch task ===================
+
+    //     let prize = prompt("Enter a number between 0 to 5");
+    //     prize = Number(prize);
+    //     let output = "My Selection: ";
+    //     switch (prize) {
+    //         case 0:
+    //             output += "gold";
+    //             break;
+    //         case 1:
+    //             output += "silver";
+    //             break;
+    //         case 2:
+    //             output += "box";
+    //             break;
+    //         case 3:
+    //             output += "big";
+    //             break;
+    //         case 4:
+    //             output += "trophee";
+    //             break;
+    //         default:
+    //             output+="Try again"
+    //    }
+    //     console.log(output);
+
+    //=================== Random Number ================
+    let random=Math.random()*50;   //0.5*10=5; 0.3*10=3; 0.9*10=9
+    console.log(Math.floor(random)) //gives the whole number by removing values after point.
+
+        const q = 1;
+        switch (q) {
+        case '1':
+        answer = "one";
+        break;
+        case 1:
+        answer = 1;
+        case 2:
+        answer = "this is the one";
+        break;
+        default:
+        answer = "not working";
+        }
+        //console.log(answer);
+
+        let val=100;
+
+        let check = (val % 2==0) ? `Odd` : `Even`;
+        check = `${val} is ${check}`;
+        console.log(check);
+
+    </script>
+</body>
+
+</html>
