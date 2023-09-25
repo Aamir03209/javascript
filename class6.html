@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+    //================ While Loop =============================
+        // let i = 0;
+        // while (i < 10) {    // 0<10 1<10 2<10 ...... 10<10==false
+        // console.log(i);
+        // i++;
+        // }
+        // console.log("Loop Ended");
+
+        //=================== example 2 ===================
+        // let someArray = ["Mike", "Antal", "Marc", "Emir", "Louiza", "Jacky"];
+        // let notFound = true;
+        // while (notFound && someArray.length > 0) {
+        // if (someArray[0] === "Jacky") {
+        // console.log("Found her!");
+        // notFound = false;
+        // } 
+        // else {
+        // console.log(someArray.length)
+        // someArray.shift(); //removes value from start of the array
+        
+        // }
+        // }  
+
+        //================== Do while Loop  ================ 
+
+        // let num;
+        // let choice;
+        // choice=prompt("Press y to enter the number");
+        // do{
+        //      num=prompt("Enter a number");
+        //     //  num=Number(choice)
+        //     console.log("You entered: " + num);
+            
+        //    choice=prompt("Press y to enter the number again");
+        // }while(choice=="y"||choice=="Y");
+
+        //================== For Loop  ================ 
+        // for (let i = 0; i < 10; i++) {
+        // //console.log(i);
+        // }
+        // let arr = [];
+        // for (let i = 0; i < 100; i++) {
+        // arr.push(i);
+        // }
+        // for (let i = 0; i < 100; i++) {
+        // arr.pop(i);
+        // }
+        
+
+        // console.log(arr)
+
+        //================ For Loop Task ==================
+        // let mywork=[];
+        // for(let i=1; i<=10;i++){
+        //     let temp={name: `Lesson ${i}`, page: `Page ${i}`}
+        //     mywork.push(temp);
+
+        // };
+        // console.log(mywork)
+
+        //============ Nested Loops=============
+
+        for(let i=0 ; i<3; i++) //row
+        {
+
+        for(let j=0 ; j<3; j++) //column
+        {
+            console.log(j)    //0 1 2 //0 1 2 //0 1 2
+
+        }
+        console.log("row completed")
+
+        }
+
+        
+    </script>
+</body>
+</html>
