@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //==================== Anonumous and callback functions
+    //    let passAsParameter=()=>{
+    //     console.log("Anonymous function")
+    //    }
+
+    //    function myFunction(para){
+    //     //setTimeout(para,3000);
+    //     setInterval(para,1000);
+        
+
+    //    }
+    //    myFunction(passAsParameter)
+       //===================== setTimeOut =================
+
+    //    let one=()=>console.log("one");
+    //    let two=()=>console.log("two");
+    //    let three=()=>{
+    //     console.log("three");
+    //     one();
+    //     two();
+    // };
+
+    //    let four=()=>{
+    //     console.log("four");
+    //     setTimeout(one,5000);
+    //     three();
+    // };
+    // four();
+
+    //==================== classes and objects=======================
+     
+    // class Person{
+    //     constructor(name,age,height){
+    //         this.name=name;
+    //         this.age=age;
+    //         this.height=height;
+
+    //     }
+    //     education(edu,grades){
+    //         return `Your education is ${edu} and grades are ${grades}`;
+    //     }
+    //     display(){
+    //         console.log(`My name is ${obj1.name} and my age is ${obj1.age} and height is ${obj1.height}`)
+    //         console.log(`My name is ${obj2.name} and my age is ${obj2.age} and height is ${obj2.height}`)
+           
+    //     }
+
+    // };
+    // let obj1=new Person("Amir",22,6);
+    // let obj2=new Person("Hamza",21,6);
+    // let print=obj1.education("graduation","A");
+    // console.log(print);
+
+    // obj1.display();
+
+
+    //======================== class task =======================
+    class Person{
+        constructor(firstName,lastName){
+            this.firstName=firstName;
+            this.lastName=lastName;
+
+        }
+        fullname(){
+            return `Your full name is ${this.firstName} ${this.lastName}`;
+        }
+    }
+    let obj1=new Person("Aamir","Hussain");
+    let displayName=obj1.fullname();
+    console.log(displayName);
+    
+
+  
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

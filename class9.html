@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num1=10;
+        // let num2=20;
+        // let operator="+";//prompt("Enter operator to perform operation?");
+        
+        // function myFunction(number1=10,number2=20,op="+"){
+        //     if(op==="+"){
+        //         return number1+number2;
+        //     }
+        //     else if(op==="-"){
+        //         return number1-number2;
+        //     }
+        //     else{
+        //         return "Enter a valid operation"
+        //     }
+
+        // }
+
+        // //let result=myFunction();
+        // let result=myFunction(12)
+
+        // console.log(result)
+
+
+        //================ Arrow Function ===============
+
+        // function myFunction(num1,num2){
+        //     return num1+num2;
+        // }
+        // let result=myFunction(10,2);
+
+        // let result=(num1,num2)=>{return num1+num2}; //()=>{}
+
+
+        // console.log(result(7,8))
+
+        //================ forEach method ==============
+    //     let arr=[1,2,3,4,5,6];
+    //     arr.forEach((element)=>{
+    //         if(element%2===0){
+    //             console.log(element);
+    //         }
+    //     });
+
+    //==========================Spread Operator ==============
+
+    // function sum(num1,num2,num3,num4){
+    //     return num1+num2+num3+num4;
+    // }
+    // const arr1=[1,7];
+    // const arr2=[3,5];
+
+    // let result=sum(...arr1,...arr2);
+    // console.log(result);
+
+    //=========================== Rest Operator ================
+
+    let arr=[1,2,3,4,5,6,7,8];
+    console.log(...arr);
+
+    function someFunction(param1, ...param2) {
+    console.log(param1, param2);
+    }
+
+    someFunction("hi", "there!", "How are you","I am Amir")
+     </script>
+</body>
+</html>
