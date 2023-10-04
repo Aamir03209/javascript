@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //===================== getter and setter (Accessors)======================
+        class Person {
+        #firstname;
+        #lastname;
+        constructor(firstname, lastname)
+         {
+        this.#firstname = firstname;
+        if(lastname.startsWith("M")){
+        this.#lastname = lastname; 
+        } else {
+        this.#lastname = `M ${lastname}`; 
+        }
+        }
+        get firstname(){
+            return this.#firstname;
+        }
+        set firstname(newname){
+            this.#firstname=firstname;
+        }
+        get lastname(){
+            return this.#lastname;
+        }
+        set lastname(newname){
+            this.#lastname=lastname;
+        }
+   }
+    let myPerson=new Person("Amir","Hussain");
+    Person.prototype.age=22;
+    Person.prototype.display=()=>{
+        console.log( `This is my function outside the class`);
+    }
+    console.log(myPerson.firstname);
+    console.log(myPerson.lastname);
+    console.log(myPerson.age);
+    myPerson.display();
+    
+
+//========================= Class Inheritance =====================
+
+//parent class
+// class Car{
+//     constructor(brand){
+//         this.carName=brand;
+//     }
+//     display(){
+//         return `I have a ${this.carName} `;
+//     }
+// }
+// class Model extends Car{
+//     constructor(brand,mod){
+//         super(brand);
+//         this.model=mod;
+
+//     }
+//     show(){
+//         return `${this.display()} and it's model is ${this.model} `
+//     }
+
+
+// }
+// let mycar=new Model("toyota","2008");
+// console.log(mycar.show());
+
+
+    </script>
+</body>
+</html>
