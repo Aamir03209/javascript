@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const months = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December',
+        ];
+        const weekdays = [
+            'Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday',
+        ];
+        let date = new Date();
+        //console.log(date);
+        let currentdate = Date.now(1000);
+        //console.log(currentdate)
+        let day=date.getDay();
+        //console.log(weekdays[day]);
+        // let month=date.getMonth();
+        // console.log(months[month]);
+        // console.log(date.getFullYear());
+        // console.log(date.getHours());
+        // console.log(date.getMinutes());
+        // console.log(date.getSeconds());
+        // date.setMinutes(45);
+        // console.log(date)
+        // date.setHours(12)
+        // console.log(date)
+        // console.log(date.toDateString())
+        // console.log(date.toLocaleDateString())
+
+        let dated=new Date(2023,5,12,6,8,30); //(year,month,date,hours,minutes,seconds,milliseconds)
+        console.log(dated)
+
+
+
+        
+
+
+    </script>
+</body>
+
+</html>
