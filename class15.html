@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Amir</h1>
+    <h1>Hamza</h1>
+    <h1>Usman</h1>
+    <div id="forest">
+        <div id="tree1">
+            <p id="greeting" class="para">How are you</p>
+            <div id="squirrel">I am Amir</div>
+            <div id="flower" onclick="myFunction()">Flower</div>
+        </div>
+        <div id="tree2">
+            <div id="shrubbery">
+                <div id="treasure"></div>
+            </div>
+            <div id="mushroom">
+                <div id="bug"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //console.log(document.body.children.forest.children.tree2.children.shrubbery.children.treasure) //finding treasure id
+    //console.log(document.body.children.forest.children.tree1.children.squirrel.parentElement) //finding parent element
+    //console.log(document.body.children.forest.children.tree1.children.squirrel.parentElement.parentElement.parentElement) //outer parents finding
+    //console.log( document.body.children.forest.children.tree2.previousElementSibling); //previous sibling
+    //console.log( document.body.children.forest.children.tree1.nextElementSibling);    //next sibling
+    //console.log( document.body.children.forest.children.tree1.children.squirrel.nextElementSibling);
+
+    //Doing change in elment by accessing it.
+
+    //    let greeting= document.body.children.forest.children.tree1.children.greeting;
+    //    let squirrel= document.body.children.forest.children.tree1.children.squirrel;
+    //    greeting.innerText="I am Fine";  // changing text only
+    //    squirrel.innerHTML="<strong>My name is Amir</strong>" //changing complete html
+
+
+    //Accessing Dom Element by Id
+
+    //console.log(document.getElementById("mushroom"));
+
+    //Accessing Dom Element by tagname
+     
+    //console.log(document.getElementsByTagName("div"))
+    //console.log(document.getElementsByTagName("div").item(2))
+
+    //Accessing Dom Element by className
+
+    //console.log(document.getElementsByClassName("para"));
+
+    //Exercise 10.3
+    //  let myTags=document.getElementsByTagName("h1");
+    // console.log(myTags[1]);
+
+
+    //Accessing Elements with CSS Selectors
+
+    //console.log(document.querySelector("div"));
+    //console.log(document.querySelectorAll("div"));
+    console.log(document.querySelector(".para"));
+    console.log(document.querySelector("#flower"));
+
+    //function of flower id
+    function myFunction(){
+        alert("you clicked flower");
+        console.log("clicked")
+    }
+
+
+
+
+
+
+
+
+</script>
+
+</html>
