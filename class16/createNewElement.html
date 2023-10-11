@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Add a Random Number</button>
+    <!-- <h2>First</h2>
+    <h2>Second</h2>
+    <h2>Third</h2> -->
+    
+</body>
+<script>
+    let button=document.getElementById("btn");
+    button.addEventListener("click",addRandomNumber);
+    function addRandomNumber(){
+        let h1=document.createElement("h1");
+        h1.innerText=Math.floor(Math.random()*51);
+        document.body.appendChild(h1);
+    }
+</script>
+</html>

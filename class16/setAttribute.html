@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        .square{
+            background-color: yellow;
+        }
+        .circle{
+            border-radius: 50%;
+            background-color: red;
+
+        }
+        #new{
+            border-radius: 50%;
+            background-color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="shape" class="square"></div>
+
+    <button id="btn">Change attributes...</button>
+</body>
+<script>
+    let button=document.getElementById("btn");
+    button.addEventListener("click",changeAttr);
+    function changeAttr(){
+        let element=document.getElementById("shape");
+        //element.setAttribute("class","circle");
+        element.setAttribute("id","new")
+    }
+
+</script>
+
+</html>
