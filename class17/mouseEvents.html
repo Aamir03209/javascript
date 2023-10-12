@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width:300px;
+        height:300px;
+        border:1px solid black;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div id="box"></div>
+    <button id="btn">click me</button>
+    
+</body>
+<script>
+    let ele= document.getElementById("box");
+    ele.addEventListener("dblclick",function(){changeColor(this,"green")});
+    ele.addEventListener("mouseenter",function(){changeColor(this,"black")});
+    ele.addEventListener("mouseleave",function(){changeColor(this,"pink")});
+    ele.addEventListener("mouseup",function(){changeColor(this,"yellow")});
+    ele.addEventListener("mouseout",function(){changeColor(this,"red")});
+
+
+
+
+
+
+     
+
+  function changeColor(element,color){
+   element.style.backgroundColor=color;
+  }
+
+//Event Target property: event variable is available bydefault when an event is triggered.
+
+
+// let button= document.getElementById("btn");
+// button.addEventListener("click",(event)=>{
+// console.log(event.target.parentElement)
+// })
+
+    
+</script>
+</html>
