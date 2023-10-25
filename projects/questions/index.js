@@ -9,6 +9,8 @@ let question=element.currentTarget.parentElement.parentElement;
 // else{
 //     question.classList.add("show-text")
 // }
+let question1=document.querySelector('minus-icon').parentElement.parentElement;
+console.log(question)
 question.classList.toggle("show-text")
 })
 })

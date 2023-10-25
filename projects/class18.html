@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper"></div>
+    Name: <input type="text" name="fullname" id="inputField">
+    Email: <input type="email" name="email" id="emailField" onchange="onBlurFunction()">
+    checkNumber: <input type="text" name="number" id="demo" onkeydown="keyPressFunction()" onkeyup="keyPressFunction1()">
+</body>
+<script>
+    let element=document.getElementById("inputField");
+    element.addEventListener("change",onChangeFunction)
+   function onChangeFunction(){
+    let element=document.getElementById("inputField");
+    element.value=element.value.toUpperCase();
+    element.style.backgroundColor="pink";
+   }
+
+   function onBlurFunction(){
+    let element=document.getElementById("emailField");
+    element.style.color="red";
+    element.style.backgroundColor="#000";
+   }
+   function keyPressFunction(){
+    let demo= document.getElementById("demo");
+    demo.style.backgroundColor="yellow";
+   }
+   function keyPressFunction1(){
+    let demo= document.getElementById("demo");
+    demo.style.backgroundColor="red";
+   }
+   
+
+</script>
+</html>

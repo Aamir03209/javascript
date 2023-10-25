@@ -89,7 +89,6 @@ const menu = [
   window.addEventListener("DOMContentLoaded",()=>{
     displayMenuItems(menu);
     displayMenuButtons();
-   
   })
 
   function displayMenuItems(menuItems){
@@ -130,7 +129,6 @@ const menu = [
                displayMenuItems(menu)
             }else{
                 displayMenuItems(menuCategory)
-              
             }
         })
       })
