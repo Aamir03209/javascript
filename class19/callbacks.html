@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Functions</title>
+</head>
+<body>
+    <script>
+//   function judge(grade) {
+//  switch (true) {
+//  case grade == "A":
+//  console.log("You got an", grade, ": amazing!");
+//  break;
+//  case grade == "B":
+//  console.log("You got a", grade, ": well done!");
+//  break;
+//  case grade == "C":
+//  console.log("You got a", grade, ": alright.");
+//  break;
+//  case grade == "D":
+//  console.log("You got a", grade, ": hmmm...");
+//  break;
+//  default:
+//  console.log("An", grade, "! What?!");
+//  }
+// }
+// function getGrade(score, callback) {
+//  let grade;
+//  switch (true) {
+//  case score >= 90:
+//  grade = "A";
+//  break;
+//  case score >= 80:
+//  console.log(score);
+//  grade = "B";
+//  break;
+//  case score >= 70:
+//  grade = "C";
+//  break;
+//  case score >= 60:
+//  grade = "D";
+//  break;
+//  default:
+//  grade = "F";
+//  }
+//  callback(grade);
+// }
+// getGrade(85, judge);
+
+
+// function calculateSum(num1, num2){
+//     let sum = num1+num2;
+//     return sum;
+// }
+
+// function display(callbackFunction){
+//     let sum=callbackFunction(10,20)
+//     console.log(sum);
+// }
+
+// display(calculateSum)
+
+function calculateDifference(num1,num2){
+let difference=num1-num2;
+return difference;
+}
+
+function display(callbackFunction){
+       let diff= callbackFunction(10,5)
+       console.log(diff)
+}
+
+display(calculateDifference)
+
+    </script>
+</body>
+</html>
