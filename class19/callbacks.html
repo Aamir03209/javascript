@@ -61,17 +61,28 @@
 
 // display(calculateSum)
 
-function calculateDifference(num1,num2){
-let difference=num1-num2;
-return difference;
-}
+// function calculateDifference(num1,num2){
+// let difference=num1-num2;
+// return difference;
+// }
 
-function display(callbackFunction){
-       let diff= callbackFunction(10,5)
-       console.log(diff)
-}
+// function display(callbackFunction){
+//        let diff= callbackFunction(10,5)
+//        console.log(diff)
+// }
 
-display(calculateDifference)
+// display(calculateDifference)
+
+function calculateSum(num1,num2){
+    let sum=num1+num2;
+    return sum;
+}
+function display(callback){
+       let sum=callback(5,6)
+       console.log("Sum is : ",sum)
+} 
+display(calculateSum)
+
 
     </script>
 </body>

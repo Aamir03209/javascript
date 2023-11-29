@@ -61,36 +61,85 @@
 
         //Practice Example
 
-        let myPromise=new Promise((res,rej)=>{
-        let str="Start Counting";
-        if(str==="Start"){
-            res(str)
-        }
-        else{
-            rej("Error! ")
-        }
+        // let myPromise=new Promise((res,rej)=>{
+        // let str="Start Counting";
+        // if(str==="Start Counting"){
+        //     res(str)
+        // }
+        // else{
+        //     rej("Error! ")
+        // }
 
+        // });
+        // myPromise.then((value)=>{
+        //     //console.log(value); //Start Counting
+        //     counter(value);
+        //     return "one";
+        // }).then((value)=>{
+        //     counter(value);
+        //     return "two"
+        // }).then((value)=>{
+        //     counter(value);
+        //     return "three"
+        // }).then((value)=>{
+        //     counter(value)
+        // }).catch((error)=>{
+        //     console.log(error)
+        // })
+        
+        
+        // function counter(number){
+        // console.log(number);
+        // }
+
+        //   function calculateSum(num1,num2,num3,num4){
+        //     let sum = num1+num2+num3+num4;
+        //     return sum;
+        //   }
+        //   function calculateAverage(sum){
+        //     let avg=sum/4;
+        //     return avg;
+        //   }
+        //  function display(avg){
+        //     console.log("The Average is : ", avg)
+
+        //   }
+
+        //   let promise=new Promise((res,rej)=>{
+        //     if(true){
+        //      res(calculateSum(5,6,7,8))
+        //     }
+        //     else{
+        //         rej("Error!")
+        //     }
+        //   });
+        //   promise.then((sum)=>{
+        //       //console.log("Sum is :",sum);
+        //       return sum;
+        //   }).then((value)=>{
+        //    let average= calculateAverage(value)
+        //    //console.log("Average is: " ,average)
+        //    return average;
+        //   }).then((value)=>{
+        //      display(value)
+        //   }).catch((error)=>{
+        //     console.log(error)
+        //   })
+          
+        function saySomething(x) {
+        return new Promise(resolve => {
+        setTimeout(() => {
+        resolve("something" + x);
+        }, 2000);
         });
-        myPromise.then((value)=>{
-            //console.log(value); //Start Counting
-            counter(value);
-            return "one";
-        }).then((value)=>{
-            counter(value);
-            return "two"
-        }).then((value)=>{
-            counter(value);
-            return "three"
-        }).then((value)=>{
-            counter(value)
-        }).catch((error)=>{
-            console.log(error)
-        })
-        
-        
-        function counter(number){
-        console.log(number);
         }
+        async function talk(x) {
+        const words = await saySomething(x);
+        console.log(words);
+        }
+        talk(2);
+        talk(4);
+        talk(8);
     </script>
     
 </body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+   const arr = [123, "test", 343, 333, {company: "ITfiers"}, "Bazil","amir"];
+   let result=arr.reduce((initialState,currentValue)=>{
+    if((typeof currentValue)==='number'){
+       return{
+        ...initialState,
+        numbers:[...initialState.numbers,currentValue],
+       }
+    }
+    else if((typeof currentValue)==='string'){
+        return{
+        ...initialState,
+        strings:[...initialState.strings,currentValue],
+       }
+    }
+    else if((typeof currentValue)==='object'){
+        return{
+        ...initialState,
+        objects:[...initialState.objects,currentValue],
+       }
+    }
+   
+    return initialState
+       
+},{numbers:[],strings:[],objects:[]})
+
+console.log(result)
+
+//...initialState=numbers[],strings[],objects[]
+// let num=9;
+// console.log(typeof num)
+
+
+
+  </script>
+</body>
+</html>
